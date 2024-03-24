@@ -1,0 +1,38 @@
+<!DOCTYPE html5>
+<html>
+  <head lang="cn-zh">
+    <title>门锁</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <div class="main">
+
+      <div class="open_door_from_js">
+        <button onclick="open_door()">开门</button>
+        <script>
+          function open_door() {
+            fetch('./open_door', {
+              method: "POST",
+              headers: {	
+                'content-type': 'application/json'
+              },
+              body: JSON.stringify({signal: 'open_door'})
+            })
+            .then(res => res.json()
+            .then(data => alert(data.message)))
+          }
+        </script>
+      </div>
+
+      <div class="open_door_from_html">
+        <form action="./open_door" method="post">
+          <input type="hidden" name="signal" value="open_door">
+          <input type="submit" value="开门！！！">
+        </form>
+      </div>
+      
+    </div>
+  </body>
+</html>
