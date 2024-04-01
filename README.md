@@ -2,7 +2,7 @@
 用网页发送开门信号，信号发送端   
 
 ## 和另外几个项目一起使用
-- 信号发送端： [本项目 in JavaScript](https://github.com/faf4r/lock-web)
+- 信号发送端： [本项目 in JavaScript](https://github.com/faf4r/lock-web) 或 [lock-app](https://github.com/faf4r/lock-app)
 - 信号接收端： [lock-esp in C++](https://github.com/faf4r/lock-esp) 或 [lock-raspberry in python](https://github.com/faf4r/lock)
 
 ## requirements
