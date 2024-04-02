@@ -11,7 +11,7 @@ body{
 
 /* open_door button*/
 .open_door_from_js{
-    padding: 5%;
+    padding: 25%;
     display: flex;
     justify-content: center;
     /* background: aqua; */
@@ -19,10 +19,10 @@ body{
 
 button{
     display: block;
-    /* background-color: black; */
     /* border-color: transparent; */
+    /* background-color: transparent; */
+    background-color: papayawhip;
     border-color: blanchedalmond;
-    background-color: transparent;
     margin: 0 auto;
     padding: 15%;
     color: goldenrod;
