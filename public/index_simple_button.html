@@ -3,14 +3,12 @@
   <head lang="cn-zh">
     <title>Open the Door</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_button.css">
   </head>
 
   <body>
-      <div class="open_door">
-        <button onclick="open_door()">
-            <img src="./img/bg_open_door.png" alt="点击开门">
-        </button>
+      <div class="open_door_from_js">
+        <button onclick="open_door()">开门</button>
         <script>
           function open_door() {
             fetch('./open_door', {
@@ -25,5 +23,13 @@
           }
         </script>
       </div>
+
+      <div class="open_door_from_html">
+        <form action="./open_door" method="post">
+          <input type="hidden" name="signal" value="open_door">
+          <input type="submit" value="开门！！！">
+        </form>
+      </div>
+      
   </body>
 </html>

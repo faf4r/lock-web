@@ -1,30 +1,16 @@
 body{
+    width: 100%;
+    height: 100%;
+}
+
+.open_door{
+    display: flex;
+    margin: 0;
     height: 100%;
     width: 100%;
 }
 
-/* 返回json数据的接口，学习用的，不显示 */
-.open_door_from_html{
-    display: flex;
-    visibility: hidden;
-}
-
-/* open_door button*/
-.open_door_from_js{
-    padding: 25%;
-    display: flex;
-    justify-content: center;
-    /* background: aqua; */
-}
-
 button{
-    display: block;
-    /* border-color: transparent; */
-    /* background-color: transparent; */
-    background-color: papayawhip;
-    border-color: blanchedalmond;
-    margin: 0 auto;
-    padding: 15%;
-    color: goldenrod;
-    font-size: 90px;
+    border-color: transparent;
+    background-color: transparent;
 }
