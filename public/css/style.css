@@ -1,0 +1,30 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* 返回json数据的接口，学习用的，不显示 */
+.open_door_from_html{
+    display: flex;
+    visibility: hidden;
+}
+
+/* open_door button*/
+.open_door_from_js{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    /* background: aqua; */
+}
+
+button{
+    display: block;
+    /* background-color: black; */
+    /* border-color: transparent; */
+    border-color: blanchedalmond;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 15%;
+    color: goldenrod;
+    font-size: 90px;
+}
