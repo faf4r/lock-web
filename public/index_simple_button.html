@@ -6,12 +6,15 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/style_button.css">
   </head>
-
+  
   <body>
       <div class="open_door_from_js">
         <button onclick="open_door()">开门</button>
         <script>
           function open_door() {
+            if (!confirm("确定要打开吗(︶.̮︶✽)")) {
+              return;
+            }
             fetch('./open_door', {
               method: "POST",
               headers: {	

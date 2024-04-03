@@ -10,10 +10,13 @@
   <body>
       <div class="open_door">
         <button onclick="open_door()">
-            <img src="./img/bg_open_door.png" alt="点击开门">
+            <img src="./img/bg_open_door.jpg" alt="点击开门">
         </button>
         <script>
           function open_door() {
+            if (!confirm("确定要打开吗(︶.̮︶✽)")) {
+              return;
+            }
             fetch('./open_door', {
               method: "POST",
               headers: {	
